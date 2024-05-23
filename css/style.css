@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root{
+    --linear-gradient:linear-gradient(90deg, #1d6791, #256d83, #000000);
+    
+}
+*{
+    font-family: 'poppins' , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--linear-gradient);
+}
+#container{
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 8px;
+
+    
+}
+#titulo{
+    font-size: 2.25rem;
+    position: relative;
+}
+#titulo::after{
+    position: absolute;
+    content: '';
+    background: var(--linear-gradient);
+    width: 8rem;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    border-radius: 3px;
+}
+#inputs{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.campos label{
+    font-size: 15px;
+    color: #c8ced6;
+    font-weight: 500;
+}
+.campos input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #1d6791;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px;
+}
+.campos input::-webkit-outter-spin-button,
+.campos input::-webkit-inner-spin-button{
+    appearance: none;
+}
+.campos input:focus{
+    outline: none;
+}
+#resultado{
+    text-align: center;
+}
+#total{
+    font-size: 40px;
+}
+#calcular{
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background: var(--linear-gradient);
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+}

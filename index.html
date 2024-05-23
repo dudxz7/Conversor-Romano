@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor para Algarismos Romanos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main id="container">
+        <div id="calculadora">
+            <h2 id="titulo">Calculadora para Algarismos Romanos</h2>
+            <div id="inputs">
+                <div class="campos">
+                    <label for="numero">Digite um número:</label>
+                    <input type="number" id="numero">
+                </div>
+            </div>
+            <!-- Resultado -->
+            <div id="resultado">
+                <h4>Resultado em algarismos romanos: </h4>
+                <span id="total"></span>
+            </div>
+                <button id="calcular" onclick="converterParaRomano()">Calcular</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
